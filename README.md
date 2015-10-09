@@ -4,6 +4,6 @@ TO DO
 
 - [x] Mark up HTML
 
-- [] Give Elements Classes
+- [ ] Give Elements Classes
 
-- [] Play with JQuery - No Style yet!
+- [ ] Play with JQuery - No Style yet!
