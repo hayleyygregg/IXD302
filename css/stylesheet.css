@@ -36,17 +36,36 @@ footer {
 figure {
     
     text-align: center;
+    padding: 60px 0;
+    margin: 0;
     
     
 }
+
+
 
 
 figure img  {
     
     width: 450px;
     
+/*
+    text-align: center;
+    background-color: black;
+    margin: 0;
+    padding: 60px 0;
+*/
+    
     
 }
+
+
+figcaption {
+    
+    padding-top: 30px;
+    
+}
+
 
 
 aside {
@@ -55,6 +74,15 @@ aside {
     color: white;
     padding: 35px;
     padding-top: 5px;
+
+    
+}
+
+div.aside-content /* same centered style as other content */ {
+    
+    margin: 0 auto;
+   text-align: left;
+   width: 600px;
     
 }
 
