@@ -1,0 +1,220 @@
+body {
+   padding: 0px 0 50px 0;
+   font-size: 17px;
+   min-height: 100%;
+   font-family: acta-display, "Helvetica Neue eText Pro", serif;
+   font-weight: 400;
+   font-style: normal;
+   background-color: white;
+   color: #122027;
+}
+
+div.content1 {
+   margin: 0 auto;
+   text-align: left;
+   width: 600px;
+}
+
+
+header {
+    
+    background-color: black;
+    
+    
+}
+
+
+footer {
+    
+       color: #666;
+    margin: 60px;
+    margin-bottom: 0;
+    opacity: 0.6;
+    
+}
+
+figure {
+    
+    text-align: center;
+    
+    
+}
+
+
+figure img  {
+    
+    width: 450px;
+    
+    
+}
+
+
+aside {
+    
+    background-color: black;
+    color: white;
+    padding: 35px;
+    padding-top: 5px;
+    
+}
+
+aside table {
+    
+    margin: auto;
+    padding-bottom: 60px;
+    
+    
+}
+
+
+h1 {
+   font-size: 68px;
+   line-height: 75px;
+   margin: 0px 0px 0.37em 0px;
+
+}
+
+h2 {
+   font-size: 42px;
+   line-height: 50px;
+   margin: 0px 0px 0.5em 0px;
+
+}
+
+h3 {
+   font-size: 28px;
+   line-height: 50px;
+   margin: 0px 0px 0.5em 0px;
+   text-align: center; /* might change */
+   margin: 35px 0; /* same as author bit */
+
+}
+
+h4 {
+   font-weight: 600;
+
+}
+
+h5 {
+   font-weight: normal;
+}
+
+h4, h5, h6 {
+   margin-bottom: 25px;
+}
+
+h1, h2, h3, h6 {
+    
+       font-weight: 400;
+}
+
+p {
+   margin: 0px 0px 1.563em 0px;
+   font-size: 20px;
+   line-height: 30px;
+}
+
+
+blockquote {
+   font-size: 26px;
+   line-height: 37px;
+/*   margin-bottom: 25px;*/
+    margin: 60px 0; /* was 35px 0 */
+    border-left: 3px solid #ccc;
+    padding: 0em 0em 0em 0.7em;
+}
+
+blockquote footer {
+    
+        margin: 10px 0;
+        text-align: right;
+    
+}
+
+
+p.quote {
+   font-size: 23px;
+   line-height: 1.5em;
+   font-style: normal;
+   color: rgba(18, 32, 39, 1);
+   margin: 0px;
+
+}
+
+
+p.intro-paragraph {
+   text-align: center;
+   font-size: 27px;
+   line-height: 39px;
+   margin: 35px 0; /* was 1.2em top and bottom*/
+   padding: 27px;
+   border-top: 1px solid #ccc;
+   border-bottom: 1px solid #ccc;
+   border-color: rgba(204, 204, 204, 1);
+}
+
+
+p.author-byline {
+   text-align: center;
+   font-size: 16px;
+   line-height: 20px;
+   margin-bottom: 35px;
+}
+
+
+
+
+span.dropcap {
+   float: left;
+   color: #122027;
+   font-size: 89px;
+   line-height: 60px;
+   padding: 8px 5px 0px 3px;
+}
+
+aside span.dropcap {
+    
+    color: white;
+    
+}
+
+
+table {
+    
+/*    border: 1px solid black;*/
+    margin: auto;
+    padding: 35px;
+    width: 450px;
+    border-collapse: collapse;
+    
+}
+
+
+th {
+    
+    text-align: center;
+    padding: 10px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    
+}
+
+td {
+    
+        border-left: 1px solid #ccc;
+        text-align: center;
+    padding: 10px;
+    
+}
+
+td.border-right {
+    
+            border-right: 1px solid #ccc;
+    
+}
+
+tr.border-bottom {
+    
+                border-bottom: 1px solid #ccc;
+    
+}
