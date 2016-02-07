@@ -38,6 +38,8 @@ figure {
     text-align: center;
     padding: 60px 0;
     margin: 0;
+    background-color: black;
+
     
     
 }
@@ -63,6 +65,7 @@ figure img  {
 figcaption {
     
     padding-top: 30px;
+    color: white;
     
 }
 
