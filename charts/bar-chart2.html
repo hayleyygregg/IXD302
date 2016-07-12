@@ -1,0 +1,50 @@
+   <html>
+  <head>
+      
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      
+      
+    <script type="text/javascript">
+        
+        //https://jsfiddle.net/api/post/library/pure/
+        
+      google.charts.load('current', {packages:['corechart']});
+      google.charts.setOnLoadCallback(drawStuff);
+        function drawStuff() {
+          var data = new google.visualization.DataTable();
+          data.addColumn('string', 'Island');
+          data.addColumn('number', 'Hectares');
+          data.addRows([
+        ['Kapiti', 2023],
+        ['Mana', 217],
+        ['Maud', 309],
+        ['Tiritiri', 210]
+          ]);
+
+         var options = {
+           title: 'Comparison of Islands',
+           width: 500,
+           height: 300,
+           legend: 'none',
+           bar: {groupWidth: '95%'},
+           vAxis: { gridlines: { count: 4 } }
+         };
+
+         var chart = new google.visualization.ColumnChart(document.getElementById('number_format_chart'));
+         chart.draw(data, options);
+
+         document.getElementById('format-select').onchange = function() {
+           options['vAxis']['format'] = this.value;
+           chart.draw(data, options);
+         };
+      };
+
+          
+          </script>
+  </head>
+       
+  <body>
+<div id="number_format_chart"></div>
+  </body>
+       
+</html>

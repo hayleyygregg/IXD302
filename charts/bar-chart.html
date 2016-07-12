@@ -1,0 +1,56 @@
+   <html>
+  <head>
+      
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      
+      
+    <script type="text/javascript">
+        
+        //http://jsfiddle.net/asgallant/Rrhak/
+        
+function drawColumnChart(container, data) {    
+    var data = google.visualization.arrayToDataTable(data);
+    
+    var columns = [0];
+    for (var i = 0; i < data.getNumberOfRows(); i++) {
+        columns.push({
+            type: 'number',
+            label: data.getColumnLabel(1),
+            calc: (function (x) {
+                return function (dt, row) {
+                    return (row == x) ? dt.getValue(row, 1) : null;
+                }
+            })(i)
+        });
+    }
+    var view = new google.visualization.DataView(data);
+    view.setColumns(columns);
+    
+    var chart = new google.visualization.ColumnChart(container);
+    var options = {
+        fontSize: 16,
+        // set the "isStacked" option to true to make the column spacing work
+        isStacked: true
+    };
+    chart.draw(view, options);
+}
+// use the callback from the google loader to draw the chart rather than document ready
+google.load("visualization", "1", {packages:["corechart"], callback: function () {
+    drawColumnChart($("#satisfactionBarGraph")[0], [
+        ['satisfaction', 'Hectares'],
+        ['Kapiti', 2023],
+        ['Mana', 217],
+        ['Maud', 309],
+        ['Tiritiri', 210]
+    ]);
+}});
+
+          
+          </script>
+  </head>
+       
+  <body>
+<div id="satisfactionBarGraph"></div>
+  </body>
+       
+</html>

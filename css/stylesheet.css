@@ -1,9 +1,17 @@
+* { /* reset */
+    
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    
+}
+
+
 body {
-   padding: 0px 0 50px 0;
+   padding-bottom: 50px;
    font-size: 17px;
-   min-height: 100%;
    font-family: "acta-display", serif;
-   font-weight: 400;
+   font-weight: 300;
    font-style: normal;
    background-color: white;
    color: #122027;
@@ -11,7 +19,8 @@ body {
 
 div.content1, div.content1-end {
     margin: auto;
-    margin-bottom: 120px;
+/*    margin-bottom: 120px;*/
+    margin-bottom: 200px;
    text-align: left;
    width: 600px;
 }
@@ -28,37 +37,50 @@ section.severe-winters {
     
     margin-top: 120px;
 
-    
-    
+  
 }
 
 
 header {
     
     background-color: black;
+    background-image: url(../images/New-Zealand-physical-map.jpg);
+
+}
+
+
+header img.opening-title {
     
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+/*    background: rgba(0, 0, 0, 0.5);*/
+    width: 600px;
+
     
 }
+
+header .opening-title-opacity-background {
+    
+    background: rgba(0, 0, 0, 0.6);
+    
+}
+
+
 
 
 footer {
     
-       color: #666;
+    color: #666;
     margin: 60px;
     margin-bottom: 0;
     opacity: 0.6;
+    font-size: 14px;
+    line-height: 1.5;
     
 }
 
-
-/*
-section {
-    
-    margin-bottom: 60px;
-    
-    
-}
-*/
 
 
 
@@ -66,29 +88,18 @@ section {
 figure {
     
     text-align: center;
-    padding: 120px 0; /* was 60 changed to match content1 div balance spacing */
+    padding: 200px 0; /* was 60 changed to match content1 div balance spacing then changed to 200px to match table & new spacing */
     margin: 0;
     background-color: black;
-
-    
+  
     
 }
-
-
 
 
 figure img  {
     
     width: 450px;
-    
-/*
-    text-align: center;
-    background-color: black;
-    margin: 0;
-    padding: 60px 0;
-*/
-    
-    
+ 
 }
 
 
@@ -97,6 +108,12 @@ figure.wing-span-intro {
     background-color: white; 
     padding: 60px 0;
     
+    
+}
+
+figure.wing-span-intro img {
+    
+    width: 300px; /* keep or delete? */
     
 }
 
@@ -110,19 +127,10 @@ figure.wing-span, figure.bird-bottom {
 }
 
 
-/*
-figure.bird-bottom {
-    
-    padding: 0;
-    margin-top: 120px; 
-    
-}
-*/
 
-
-figure.wing-span img, figure.bird-bottom img {
+figure.bird-bottom img {
     
-    width: 350px;  keep or? 
+    width: 350px;  /*keep or? */
     
     
 }
@@ -140,13 +148,12 @@ figure.wing-span img.footspan {
 
 figure.bird-bottom img.bird-bottom-right {
     
-        position: relative;
-    top: 50px;
+    position: relative;
+    bottom: -65px; /* used to be top: 50px; then -100 bottom but changed due to new h2 font size */
     left: 310px;
 /*    width: 300px;*/
     
-
-    
+  
 }
 
 
@@ -154,22 +161,22 @@ figure.bird-bottom img.bird-bottom-left {
     
     
             position: relative;
-    top: 50px;
+/*    top: 110px;*/
+    bottom: -100px;
     left: -310px;
     
     
     
 }
 
-/*
 
-figure.bird-bottom img.footer-bird {
+figure.bird-bottom img.bird-bottom-right, figure.bird-bottom img.bird-bottom-left {
     
-    margin-top: 60px;
-    
+        margin-top: 50px; /* was 80px */
     
 }
-*/
+
+
 
 
 figcaption {
@@ -185,15 +192,12 @@ aside {
     
     background-color: black;
     color: white;
-/*
-    padding: 35px;
-    padding-top: 5px;
-*/
-    
-    padding: 120px 0; /* match other spacing */
+    padding: 120px 0;
+    padding-bottom: 90px; /* because added cite at bottom */
 
     
 }
+
 
 div.aside-content /* same centered style as other content */ {
     
@@ -203,14 +207,21 @@ div.aside-content /* same centered style as other content */ {
     
 }
 
-aside table {
+div.aside-content h3 {
     
-    margin: auto;
-    padding-bottom: 60px;
-    
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    font-weight: 200;
     
 }
 
+
+aside cite {
+    
+    font-size: 0.7em;
+    padding-top: 20px;
+    display: block;
+}
 
 h1 {
    font-size: 68px;
@@ -227,7 +238,7 @@ h2 {
 }
 
 h3 {
-   font-size: 28px;
+   font-size: 2em;
    line-height: 50px;
    margin: 0px 0px 0.5em 0px;
    text-align: center; /* might change */
@@ -236,21 +247,7 @@ h3 {
 }
 
 
-
-h4 {
-   font-weight: 600;
-
-}
-
-h5 {
-   font-weight: normal;
-}
-
-h4, h5, h6 {
-   margin-bottom: 25px;
-}
-
-h1, h2, h3, h6 {
+h1, h2, h3 {
     
        font-weight: 400;
 }
@@ -298,10 +295,11 @@ p.intro-paragraph {
    font-size: 27px;
    line-height: 39px;
    margin: 35px 0; /* was 1.2em top and bottom*/
+    margin-top: 120px;
    padding: 27px;
    border-top: 1px solid #ccc;
    border-bottom: 1px solid #ccc;
-   border-color: rgba(204, 204, 204, 1);
+   border-color: black;
 }
 
 
@@ -347,8 +345,8 @@ table {
 
 table.fast-facts {
     
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin: 60px 0;
+    
     
 }
 
@@ -359,17 +357,14 @@ table.fast-facts td {
     
 }
 
-tr.no-border-bottom td {
-    
-        border-bottom: none;
-    
-}
 
 
 table caption {
     
     padding: 35px;
-    font-size: 25px;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 200;
 /*
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc; 
@@ -379,7 +374,7 @@ table caption {
 div.bird-table {
     
     background-color: black;
-    padding: 120px 0;
+    padding: 200px 0; /* was 120px 0; */
     
 }
 
@@ -393,24 +388,19 @@ div.bird-table td {
 th {
     
     text-align: center;
-    padding: 10px;
-/*    background-color: #ccc;*/
+    padding: 12px;
     border: 1px solid #ccc;
-    border-top: none;
+/*    border-top: none;*/
+    font-weight: 500;
+    font-size: 1.1em;
     
 }
 
 td {
     
-        border-left: 1px solid #ccc;
+        border: 1px solid #ccc;
         text-align: center;
     padding: 20px; /* was 10 */
-    
-}
-
-td.border-right {
-    
-            border-right: 1px solid #ccc;
     
 }
 
@@ -423,9 +413,77 @@ tr:hover {
     
 }
 
-/*
-tr.border-bottom {
+
+
+                /* MAP */
+
+
+                #map-wrapper {
+                    
+                    width: 100%;
+                    background-color: black;
+                    padding: 200px 0;
+                    
+                }
+                
+              #map {
+        /*        width: 642px;*/
+                width: 100%;
+                height: 500px; /*  was 443 */
+        /*        margin: auto;*/
+              }
+                
+                #firstHeading {
+                    
+                    font-size: 3em;
+                    font-weight: 200;
+                    
+                }
+
+            #content {
+
+                font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+                font-weight: 200;
+
+            }
+
+            b {
+
+                font-weight: 500;
+
+            }
+
+
+
+/* GOOGLE CHART */
+
+#chart-container {
     
-                border-bottom: 1px solid #ccc;
+    background-color: black;
+    padding: 200px 0;
+    
+}
+
+#chart_div {
+    
+    width: 500px;
+    margin: auto; /* not working */
+    display: block;
+
+
+}
+
+
+
+/* tooltip style help http://jsfiddle.net/nyNAg/66/ */
+
+/*
+div.google-visualization-tooltip { 
+    
+    padding: 5px;
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    
     
 }*/

@@ -1,0 +1,60 @@
+/* MOBILE DISPLAY - help from http://stephen.io/mediaqueries/#iPhone */
+
+@media screen and (min-width : 320px) and (max-width : 667px)
+
+{ /* STYLES GO HERE */
+    
+    
+    div.content1, div.content1-end , div.aside-content {
+
+    width: 75%; 
+
+}
+    
+
+
+header img.opening-title {
+    
+    width: 100%; 
+
+    
+}
+    
+    table {
+    
+width: 70%;
+    
+}
+    
+figure.wing-span, .bird-bottom-right, .bird-bottom-left {
+    
+    display: none;
+}
+    
+h3 {
+    
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+    
+
+    aside {
+    
+    padding: 50px 0;
+    padding-bottom: 90px;
+
+    
+}
+    
+    table.fast-facts {
+    
+    width: 100%;
+    
+    
+}
+
+
+
+}
+
+
